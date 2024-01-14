@@ -1,6 +1,7 @@
 import {
   Component,
-  OnInit
+  OnInit,
+  Input
 } from '@angular/core';
 
 @Component({
@@ -9,6 +10,12 @@ import {
   styleUrl: './big-card.component.css'
 })
 export class BigCardComponent implements OnInit {
+  @Input()
+  photoCover:string = ""
+  @Input()
+  cardTitle: string = ""
+  @Input()
+  cardDescription: string = ""
 
 
     constructor() { }
